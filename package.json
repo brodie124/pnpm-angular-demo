@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build:a": "cd ./production-mock && pnpm run build && cd ../development-mock && pnpm run build",
+    "build:b": "cd ./development-mock && pnpm run build && cd ../production-mock && pnpm run build",
+    "install:pnpm": "cd ./development-mock && pnpm i && cd ../production-mock && pnpm i",
+    "install:npm": "cd ./development-mock && npm i && cd ../production-mock && npm i"
+  }
+}
