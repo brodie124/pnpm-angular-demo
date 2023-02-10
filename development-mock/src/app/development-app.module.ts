@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { DevelopmentAppRoot } from './development-app-root.component';
-import {MockFeatureModuleModule} from "../../../production-mock/src/app/mock-feature-module/mock-feature-module.module";
 import {AppModule} from "../../../production-mock/src/app/app.module";
 
 @NgModule({
@@ -12,7 +11,6 @@ import {AppModule} from "../../../production-mock/src/app/app.module";
   imports: [
     BrowserModule,
     AppModule,
-    MockFeatureModuleModule,
   ],
   providers: [],
   bootstrap: [DevelopmentAppRoot]
