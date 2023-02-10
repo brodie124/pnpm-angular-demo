@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "build": "pnpm run build:a",
     "build:a": "cd ./production-mock && pnpm run build && cd ../development-mock && pnpm run build",
     "build:b": "cd ./development-mock && pnpm run build && cd ../production-mock && pnpm run build",
     "install:pnpm": "cd ./development-mock && pnpm i && cd ../production-mock && pnpm i",
